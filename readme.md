@@ -6,7 +6,7 @@ This project was generated using the [bbs CLI](https://github.com). It serves as
 
 This template includes the following key dependencies:
 
-- **TypeScript** – Static TypeScriptg for JavaScript.
+- **TypeScript** – Static TypeScript for JavaScript.
 - **Jest** – Testing framework.
 - **esbuild** – Fast JavaScript bundler.
 
