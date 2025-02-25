@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ESNext", // Use the latest JavaScript features
-    "module": "CommonJS", // CommonJS for CLI module format
-    "moduleResolution": "Node", // Node-style module resolution
-    "lib": ["ESNext", "dom"], // Include ESNext lib features
+    "module": "NodeNext", // Best for modern Node.js (supports ESM and CJS)
+    "moduleResolution": "NodeNext", // Resolves both CommonJS and ESM imports correctly
+    "target": "ES2022", // Matches Node.js 18+ features (async iterators, top-level await)
+    "allowSyntheticDefaultImports": true, // Enables default imports from CJS modules
     "outDir": "functions", // Output compiled JavaScript files to "dist"
     "rootDir": "src", // Set the root directory for TypeScript source files
-    "strict": false, // Enable all strict type-checking options
+    "strict": true, // Enable all strict type-checking options
     "declaration": false, // Generate a declaration file
     "sourceMap": false, // Generate a sourcemap
     "esModuleInterop": true, // Ensure compatibility between ES and CommonJS modules
@@ -19,6 +19,9 @@
     "noUnusedLocals": true, // Report errors on not used variables
     "noUnusedParameters": true, // Report errors on not used function params
     "noImplicitReturns": true // Check if all code parts return value
+  },
+  "ts-node": {
+    "transpileOnly": true
   },
   "include": [
     "src/**/*" // Include all TypeScript files in the "src" directory

@@ -4,12 +4,12 @@ import esbuild from "esbuild";
 // ✅ Copy non-TS files after build
 async function build() {
   await esbuild.build({
-    entryPoints: ["src/**/*.ts"], // ✅ Compile all TS files, keeping structure
+    entryPoints: ["src/**/*.ts"],
     outdir: "functions",
     platform: "node",
-    format: "cjs",
+    format: "esm",
     target: "esnext",
-    bundle: false, // ✅ Disable bundling to keep individual files
+    bundle: false,
   });
 
   // ✅ Copy static files
