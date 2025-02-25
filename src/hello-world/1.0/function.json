@@ -1,1 +1,23 @@
-{}
+{
+  "description": "Evaluate a javascript expression (use {{name_of_your_value}} to interpolate values).",
+  "label": "Expression",
+  "category": "Misc",
+  "icon": {
+    "name": "ExpressionIcon",
+    "color": "Orange"
+  },
+  "options": [
+    {
+      "name": "name",
+      "label": "Name",
+      "meta": {
+        "type": "Text",
+        "validations": { "required": true }
+      },
+      "configuration": {
+        "placeholder": "John"
+      }
+    }
+  ],
+  "yields": "NONE"
+}

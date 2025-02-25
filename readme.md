@@ -9,7 +9,6 @@ This template includes the following key dependencies:
 - **TypeScript** – Static typing for JavaScript.
 - **Jest** – Testing framework.
 - **esbuild** – Fast JavaScript bundler.
-- **Babel** – JavaScript compiler with TypeScript support.
 
 Check `package.json` for the full list of dependencies.
 
