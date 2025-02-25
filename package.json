@@ -16,13 +16,11 @@
     "build": "tsc --p tsconfig.json"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.9",
-    "@babel/preset-env": "^7.26.9",
-    "@babel/preset-typescript": "^7.26.0",
     "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.14",
     "babel-jest": "^29.7.0",
     "esbuild": "^0.25.0",
+    "esbuild-jest": "^0.5.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5"
   }
