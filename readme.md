@@ -1,6 +1,6 @@
 # Generic Actions TypeScript Template
 
-This project was generated using the [bbs CLI](https://github.com). It serves as a starting point for building generic actions in TypeScript.
+This project serves as a starting point for building generic actions in TypeScript.
 
 ## 📦 Dependencies
 
@@ -22,7 +22,15 @@ First, install the necessary dependencies:
 npm install
 ```
 
-### 2. Build the Project
+### 2. Add new functions
+
+You can add new functions using the `bbs` CLI.
+
+```sh
+bbs functions new <name>
+```
+
+### 3. Build the Project
 
 To compile the TypeScript files into JavaScript, run:
 
@@ -32,7 +40,7 @@ npm run build
 
 The compiled files will be placed in the `functions` folder
 
-### 3. Run Tests
+### 4. Run Tests
 
 To execute tests using Jest, run:
 
@@ -40,9 +48,9 @@ To execute tests using Jest, run:
 npm test
 ```
 
-### 4. Publishing
+### 5. Publishing
 
-To publish your project using the bbs CLI, use:
+To publish your project using the `bbs` CLI, use:
 
 ```sh
 bbs functions publish
