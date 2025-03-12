@@ -5,7 +5,7 @@ type FunctionInput = {
 };
 
 type FunctionOutput = {
-	result: undefined;
+	result: string;
 };
 
 export default async function helloWorld({
