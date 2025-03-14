@@ -1,31 +1,32 @@
 {
-	"compilerOptions": {
-		"module": "NodeNext", // Best for modern Node.js (supports ESM and CJS)
-		"target": "ES2022", // Matches Node.js 18+ features (async iterators, top-level await)
-		"allowSyntheticDefaultImports": true, // Enables default imports from CJS modules
-		"outDir": "functions", // Output compiled JavaScript files to "dist"
-		"rootDir": "src", // Set the root directory for TypeScript source files
-		"strict": true, // Enable all strict type-checking options
-		"declaration": false, // Generate a declaration file
-		"sourceMap": false, // Generate a sourcemap
-		"esModuleInterop": true, // Ensure compatibility between ES and CommonJS modules
-		"skipLibCheck": true, // Skip type checking of declaration files
-		"resolveJsonModule": true, // Enable importing JSON files
-		"forceConsistentCasingInFileNames": true, // Enforce consistent casing in filenames
-		"noImplicitAny": true, // Error when no type provided
-		"noImplicitThis": true, // Keep 'this' pointed to the class or with provided type
-		"noUnusedLocals": true, // Report errors on not used variables
-		"noUnusedParameters": true, // Report errors on not used function params
-		"noImplicitReturns": true // Check if all code parts return value
-	},
-	"ts-node": {
-		"transpileOnly": true
-	},
-	"include": [
-		"src/**/*" // Include all TypeScript files in the "src" directory
-	],
-	"exclude": [
-		"node_modules", // Exclude the "node_modules" directory
-		"dist" // Exclude the "dist" directory (output directory)
-	]
+  "compilerOptions": {
+    "module": "NodeNext", // Best for modern Node.js (supports ESM and CJS)
+    "target": "ES2022", // Matches Node.js 18+ features (async iterators, top-level await)
+    "allowSyntheticDefaultImports": true, // Enables default imports from CJS modules
+    "outDir": "functions", // Output compiled JavaScript files to "dist"
+    "rootDir": "src", // Set the root directory for TypeScript source files
+    "strict": true, // Enable all strict type-checking options
+    "declaration": false, // Generate a declaration file
+    "sourceMap": false, // Generate a sourcemap
+    "esModuleInterop": true, // Ensure compatibility between ES and CommonJS modules
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "resolveJsonModule": true, // Enable importing JSON files
+    "forceConsistentCasingInFileNames": true, // Enforce consistent casing in filenames
+    "noImplicitAny": true, // Error when no type provided
+    "noImplicitThis": true, // Keep 'this' pointed to the class or with provided type
+    "noUnusedLocals": true, // Report errors on not used variables
+    "noUnusedParameters": true, // Report errors on not used function params
+    "noImplicitReturns": true // Check if all code parts return value
+  },
+  "ts-node": {
+    "transpileOnly": true
+  },
+  "include": [
+    "src/**/*" // Include all TypeScript files in the "src" directory
+  ],
+  "exclude": [
+    "node_modules", // Exclude the "node_modules" directory
+    "dist", // Exclude the "dist" directory (output directory)
+    "tests"
+  ]
 }

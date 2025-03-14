@@ -1,17 +1,17 @@
-import { hello } from "../../utils/index.js";
+// import { hello } from "../../utils/index";
 
 type FunctionInput = {
-	name: string;
+  name: string;
 };
 
 type FunctionOutput = {
-	result: string;
+  result: string;
 };
 
-export default async function helloWorld({
-	name,
-}: FunctionInput): Promise<FunctionOutput> {
-	return {
-		result: hello(name),
-	};
+async function helloWorld({ name }: FunctionInput): Promise<FunctionOutput> {
+  return {
+    result: name,
+  };
 }
+
+export { helloWorld as default };
