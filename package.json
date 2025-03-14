@@ -16,7 +16,8 @@
     "build": "node build.js",
     "trunk": "trunk",
     "lint": "trunk check",
-    "fmt": "trunk fmt"
+    "fmt": "trunk fmt",
+    "sync": "git add . && git commit -m \".\" && git push"
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
