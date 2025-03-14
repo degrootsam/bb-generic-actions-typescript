@@ -17,7 +17,7 @@
     "trunk": "trunk",
     "lint": "trunk check",
     "fmt": "trunk fmt",
-    "sync": "git pull && (git diff --quiet && git diff --cached --quiet && git ls-files --others --exclude-standard --quiet) || (git add . && git commit -m 'sync' && git push)"
+    "sync": "git pull && (git diff --quiet && git diff --cached --quiet && git ls-files --others --exclude-standard) || (git add . && git commit -m 'sync' && git push)"
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
