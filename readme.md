@@ -9,6 +9,9 @@ This template includes the following key dependencies:
 - **TypeScript** – Static TypeScript for JavaScript.
 - **Jest** – Testing framework.
 - **esbuild** – Fast JavaScript bundler.
+- **Trunk** – DevEx toolkit to check, test, merge, and monitor your code.
+- **Commitizen** - Simplify and structure commit messages
+- **cz-conventional-changelog** - Adapter for Commitizen
 
 Check `package.json` for the full list of dependencies.
 
