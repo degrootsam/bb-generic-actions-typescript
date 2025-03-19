@@ -1,21 +1,21 @@
 {
-	"description": "Provide a description about this function",
-	"label": "helloWorld",
-	"category": "Misc",
-	"icon": {
-		"name": "ExpressionIcon",
-		"color": "Orange"
-	},
-	"options": [
-		{
-			"name": "name",
-			"label": "Name",
-			"meta": {
-				"type": "Value",
-				"allowedKinds": ["STRING"],
-				"validations": { "required": true }
-			}
-		}
-	],
-	"yields": "NONE"
+  "description": "Provide a description about this function",
+  "label": "helloWorld",
+  "category": "Misc",
+  "icon": {
+    "name": "ExpressionIcon",
+    "color": "Orange"
+  },
+  "options": [
+    {
+      "name": "name",
+      "label": "Name",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["STRING"],
+        "validations": { "required": true }
+      }
+    }
+  ],
+  "yields": "NONE"
 }
