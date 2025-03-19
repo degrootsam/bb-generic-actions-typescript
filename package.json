@@ -15,9 +15,8 @@
     "test": "jest",
     "build": "node build.js",
     "trunk": "trunk",
-    "lint": "trunk check",
-    "lint:fix": "trunk check --fix",
-    "format": "trunk fmt",
+    "lint": "trunk check --show-existing",
+    "lint:fix": "trunk check --fix --show-existing",
     "fmt": "trunk fmt",
     "sync": "git pull && (git diff --quiet && git diff --cached --quiet && git ls-files --others --exclude-standard) || (git add . && git commit -m 'sync' && git push)"
   },
