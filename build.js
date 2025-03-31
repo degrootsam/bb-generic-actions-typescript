@@ -1,25 +1,27 @@
 import fs from "fs";
 import esbuild from "esbuild";
 
+const outdir = "dist";
+
 async function build() {
-	await esbuild.build({
-		entryPoints: ["src/**/*.ts"],
-		outdir: "functions",
-		platform: "node",
-		format: "esm",
-		target: "esnext",
-		bundle: false,
-	});
+  await esbuild.build({
+    entryPoints: ["functions/**/*.ts"],
+    outdir,
+    platform: "node",
+    format: "esm",
+    target: "esnext",
+    bundle: false,
+  });
 
-	fs.cpSync("src", "functions", {
-		recursive: true,
-		filter: (src) => !src.endsWith(".ts"),
-	});
+  fs.cpSync("functions", outdir, {
+    recursive: true,
+    filter: src => !src.endsWith(".ts"),
+  });
 
-	console.log("Build complete! 🚀");
+  console.log("Build complete! 🚀");
 }
 
-build().catch((error) => {
-	console.error("Build failed:", error);
-	process.exit(1);
+build().catch(error => {
+  console.error("Build failed:", error);
+  process.exit(1);
 });
