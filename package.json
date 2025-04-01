@@ -37,10 +37,6 @@
     "prettier": "^3.2.5",
     "typescript": "~5.5.0"
   },
-  "dependencies": {
-    "@sveltejs/acorn-typescript": "^1.0.5",
-    "acorn": "^8.14.1"
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
