@@ -22,43 +22,35 @@ First, install the necessary dependencies:
 npm install
 ```
 
-### 2. Add new functions
+### 2. Test your code
 
-You can add new functions using the `bbs` CLI.
-
-```sh
-bbs functions new <name>
-```
-
-### 3. Build the Project
-
-To compile the TypeScript files into JavaScript, run:
-
-```sh
-npm run build
-```
-
-The compiled files will be placed in the `functions` folder
-
-### 4. Run Tests
-
-To execute tests using Jest, run:
+Create your tests in `__tests__` and test them:
 
 ```sh
 npm test
 ```
 
-### 5. Publishing
+### 3. Build your code
 
-To publish your project using the `bbs` CLI, use:
+After all tests have passed, build your code
 
 ```sh
-bbs functions publish
+npm run build
+```
+
+> This will build all `.ts` files and copy the `.json` files to `./functions`.
+
+### 4. Publish your code
+
+```sh
+bb functions publish
 ```
 
 This command will deploy your actions to the appropriate environment.
 
-### Notes
+## Utilizing the power of TypeScript
+
+## Notes
 
 - The `./functions` directory is included in the .gitignore.
 - This template is designed to be modular and easy to extend.
