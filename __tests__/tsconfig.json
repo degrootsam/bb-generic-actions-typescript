@@ -22,11 +22,11 @@
     "transpileOnly": true
   },
   "include": [
-    "src/**/*" // Include all TypeScript files in the "src" directory
+    "__tests__/**/*" // Include all TypeScript files in the "src" directory
   ],
   "exclude": [
     "node_modules", // Exclude the "node_modules" directory
     "dist", // Exclude the "dist" directory (output directory)
-    "__tests__"
+    "tests"
   ]
 }

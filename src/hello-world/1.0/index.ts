@@ -1,6 +1,6 @@
 // import { hello } from "../../utils/index";
 
-import { hello } from "../../utils/index.ts";
+import { hello } from "../../utils/index";
 
 type FunctionInput = {
   name: string;
