@@ -60,6 +60,7 @@ This command will deploy your actions to the appropriate environment.
 
 ### Notes
 
+- The `./functions` directory is included in the .gitignore.
 - This template is designed to be modular and easy to extend.
 - Feel free to modify tsconfig.json or jest.config.js to suit your project’s needs.
 - For more details, check out the bbs CLI documentation.
