@@ -1,5 +1,5 @@
-import { parseActionInput } from "../functions/utils";
-import { TCollection, TInputVariableMap, TPropertyMap, TRecord } from "../functions/utils/types";
+import { parseActionInput } from "../../src/utils/index";
+import { TCollection, TInputVariableMap, TPropertyMap, TRecord } from "../../src/utils/types";
 
 describe("Action Input Parser", () => {
   it("can parse a Record", () => {

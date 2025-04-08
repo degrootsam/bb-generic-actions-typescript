@@ -1,5 +1,7 @@
 // import { hello } from "../../utils/index";
 
+import { hello } from "../../utils/index.ts";
+
 type FunctionInput = {
   name: string;
 };
@@ -10,7 +12,7 @@ type FunctionOutput = {
 
 async function helloWorld({ name }: FunctionInput): Promise<FunctionOutput> {
   return {
-    result: name,
+    result: hello(name),
   };
 }
 
