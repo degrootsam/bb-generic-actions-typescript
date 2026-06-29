@@ -1,5 +1,4 @@
-import { describe, it, expect } from "@jest/globals";
-import helloWorld from "../../../src/hello-world/1.0";
+import helloWorld from "../../../hello-world/1.0/index";
 
 describe("helloWorld/1.0", () => {
   it("should return a greeting", async () => {

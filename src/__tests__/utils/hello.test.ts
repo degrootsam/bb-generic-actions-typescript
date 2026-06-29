@@ -1,4 +1,4 @@
-import { hello } from "../../src/utils/index";
+import { hello } from "../../utils";
 
 test("hello", () => {
   expect(hello("John")).toBe("Hello, John");
