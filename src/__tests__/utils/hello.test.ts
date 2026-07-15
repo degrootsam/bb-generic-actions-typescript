@@ -1,3 +1,4 @@
+import { test, expect } from "bun:test";
 import { hello } from "../../utils";
 
 test("hello", () => {
