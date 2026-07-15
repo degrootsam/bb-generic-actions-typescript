@@ -2,24 +2,23 @@
 
 This project serves as a starting point for building generic actions in TypeScript.
 
-## 📦 Dependencies
+## Dependencies
 
 This template includes the following key dependencies:
 
 - **TypeScript** – Static TypeScript for JavaScript.
-- **Jest** – Testing framework.
-- **esbuild** – Fast JavaScript bundler.
+- **bun** – Fast Compilation and Testing.
 
 Check `package.json` for the full list of dependencies.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Install Dependencies
 
 First, install the necessary dependencies:
 
 ```sh
-npm install
+bun install
 ```
 
 ### 2. Test your code
@@ -27,34 +26,43 @@ npm install
 Create your tests in `__tests__` and test them:
 
 ```sh
-npm test
+bun test
 ```
 
-### 3. Build your code
+### 3. Configure publishing
 
-After all tests have passed, build your code
+Create a `config.json` in the project root with your `applicationId` and `host`:
+
+```json
+{
+  "applicationId": "your-application-id",
+  "host": "your-host"
+}
+```
+
+See: https://github.com/bettyblocks/cli/wiki/Functions:Advanced
+
+### 4. Build & publish your code
+
+To only build your functions into `./functions`:
 
 ```sh
 npm run build
 ```
 
-> This will build all `.ts` files and copy the `.json` files to `./functions`.
-
-### 4. Publish your code
+To build and publish in one step:
 
 ```sh
-bb functions publish
+npm run publish
 ```
 
-This command will deploy your actions to the appropriate environment.
+This command checks that `config.json` exists, builds your functions, and publishes them to the application it defines. The `./functions` directory is deleted after a successful publish.
 
 ## Utilizing the power of TypeScript
 
 ## Notes
 
-- The `./functions` directory is included in the .gitignore.
+- The `./functions` directory is included in the .gitignore. It also gets deleted after a successful publish.
 - This template is designed to be modular and easy to extend.
-- Feel free to modify tsconfig.json or jest.config.js to suit your project’s needs.
+- Feel free to modify tsconfig.json to suit your project's needs.
 - For more details, check out the bbs CLI documentation.
-
-Happy coding! 🚀
