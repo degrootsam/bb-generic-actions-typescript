@@ -1,4 +1,6 @@
 import { spawn } from "child_process";
+import { rmdir } from "fs/promises";
+import path from "path";
 
 export async function publish() {
   await new Promise<void>((resolve, reject) => {
@@ -15,6 +17,9 @@ export async function publish() {
       }
     });
   });
+
+  const functionsDir = path.join(process.cwd(), "functions");
+  await rmdir(functionsDir);
 }
 
 publish().catch((err) => {
