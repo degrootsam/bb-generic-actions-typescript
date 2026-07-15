@@ -33,7 +33,9 @@ export async function build() {
   });
 }
 
-build().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+if (import.meta.main) {
+  build().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}

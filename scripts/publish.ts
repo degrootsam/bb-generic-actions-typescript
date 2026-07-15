@@ -22,7 +22,9 @@ export async function publish() {
   await rmdir(functionsDir);
 }
 
-publish().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+if (import.meta.main) {
+  publish().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
